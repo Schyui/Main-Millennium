@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bgg"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width= "340dp"
+            android:layout_height="115dp"
+            app:srcCompat="@drawable/millogo2"
+            android:id="@+id/logo"/>
+
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/startbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#6F4E37"
+            android:fontFamily="@font/font"
+            android:onClick="startGame"
+            android:text="@string/startbtn"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            app:strokeWidth="2dp" />
+
+        <!-- Practice Button -->
+        <Button
+            android:id="@+id/practicebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startbtn"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#6F4E37"
+            android:fontFamily="@font/font"
+            android:onClick="startGame"
+            android:text="@string/practicebtn"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            app:strokeWidth="2dp" />
+
+        <!-- Settings Button -->
+        <Button
+            android:id="@+id/settingsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/practicebtn"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#6F4E37"
+            android:fontFamily="@font/font"
+            android:onClick="show_Dialog"
+            android:text="@string/settingsbtn"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            app:strokeWidth="2dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:background="@drawable/brownexit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="315dp"
+        android:onClick="RemoveTask" />
+
+</RelativeLayout>
+
+</RelativeLayout>

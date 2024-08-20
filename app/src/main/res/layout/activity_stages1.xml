@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ActivityStages1">
+
+    <!--Stages -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brownthingy" />
+
+    <Button
+        android:id="@+id/stage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="#6f373c"
+        android:fontFamily="@font/font"
+        android:text="Stage 2"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/stage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="#6f373c"
+        android:fontFamily="@font/font"
+        android:text="Stage 3"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toEndOf="@+id/stage2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/stage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="#6f373c"
+        android:fontFamily="@font/font"
+        android:text="Stage 4"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toEndOf="@+id/stage3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/stage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#6f373c"
+        android:fontFamily="@font/font"
+        android:onClick="StageOne"
+        android:text="Stage 1"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toStartOf="@+id/stage2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/tutorial1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#37586f"
+        android:fontFamily="@font/font"
+        android:onClick="StageTutorialBtn"
+        android:text="Tutorial"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toStartOf="@+id/stage1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/PracticeStage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/font"
+        android:text="PRACTICE"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/StageBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="620dp"
+        android:layout_marginTop="330dp"
+        android:backgroundTint="#6F4E37"
+        android:fontFamily="@font/font"
+        android:onClick="StageBack"
+        android:text="Back"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/stage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#6f373c"
+        android:fontFamily="@font/font"
+        android:onClick="StageTutorialBtn"
+        android:text="Stage 5"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/tutorial1"
+        app:layout_constraintStart_toStartOf="@+id/tutorial1"
+        app:layout_constraintTop_toTopOf="@+id/tutorial1"
+        app:strokeWidth="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
